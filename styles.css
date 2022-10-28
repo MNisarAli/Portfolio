@@ -64,16 +64,12 @@ h1 {
   color: #fff;
 }
 
-.bottom {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.bottom-img {
-  display: block;
-  max-width: 600px;
-  width: 100%;
+div.bottom-img {
+  background-image: url(./Images/image_geometry_2.svg);
+  background-position: top;
+  background-size: 100%;
   margin-top: 1.5%;
   margin-bottom: 10px;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
