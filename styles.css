@@ -64,6 +64,11 @@ h1 {
   color: #fff;
 }
 
+.button:hover {
+  background: #fff;
+  color: #1a2236;
+}
+
 div.bottom-img {
   background-image: url(./Images/image_geometry_2.svg);
   background-position: top;
