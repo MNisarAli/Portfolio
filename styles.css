@@ -79,9 +79,9 @@ h2 {
 }
 
 .proj-section {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto;
+  margin-top: auto;
 }
 
 h2.heading {
@@ -146,6 +146,12 @@ button.proj-link {
   border: 1px solid #fff;
 }
 
+button:hover {
+  background: #fff;
+  color: #1a2236;
+  backdrop-filter: blur(0.5px);
+}
+
 button img {
   margin-left: 12px;
 }
@@ -184,7 +190,14 @@ button.cv-btn {
   color: #fff;
 }
 
+button.cv-btn:hover {
+  background: #fff;
+  color: #1a2236;
+  backdrop-filter: blur(0.5px);
+}
+
 .knowledge {
+  list-style: none;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -197,7 +210,7 @@ button.cv-btn {
   background-position-x: right;
   background-position-y: bottom;
   width: auto;
-  margin: 8px 16px 8px 16px;
+  margin: 8px 16px 8px -23px;
   height: 290px;
 }
 
@@ -206,7 +219,7 @@ button.cv-btn {
   background-image: url(./Images/ic_framework.svg);
   background-repeat: no-repeat;
   width: auto;
-  margin: 8px 16px 8px 16px;
+  margin: 8px 16px 8px -23px;
   height: 290px;
   background-position-x: right;
   background-position-y: bottom;
@@ -217,7 +230,7 @@ button.cv-btn {
   background-image: url(./Images/ic_skills.svg);
   background-repeat: no-repeat;
   width: auto;
-  margin: 8px 16px 16px 16px;
+  margin: 8px 16px 16px -23px;
   height: 290px;
   background-position-x: right;
   background-position-y: bottom;
