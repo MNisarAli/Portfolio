@@ -108,6 +108,9 @@ h2.about {
 }
 
 .proj-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   background: #1a2236;
   color: #fff;
   padding-bottom: 25px;
