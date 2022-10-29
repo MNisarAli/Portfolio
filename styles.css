@@ -1,6 +1,7 @@
 * {
   margin: 0;
 }
+
 body {
   margin: 0;
   background: #fff;
@@ -23,7 +24,8 @@ header {
   margin: 21% 5% 0 5%;
 }
 
-h1,h2 {
+h1,
+h2 {
   font-family: "Playfair Display", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -70,7 +72,8 @@ h1,h2 {
   flex-direction: column;
   align-items: center;
 }
-.bg-bottom  {
+
+.bg-bottom {
   width: 100%;
   max-width: 100%;
 }
@@ -84,14 +87,15 @@ h1,h2 {
 h2.heading {
   margin: 40px 0 32px 16px;
 }
+
 h2.about {
-  margin: 51px 0px 20px 0px;
+  margin: 51px 0 20px 0;
 }
 
 .proj-img {
   width: 100%;
   max-width: 100%;
-  margin: -5px 0px -10px 0px;
+  margin: -5px 0 -10px 0;
 }
 
 .proj-name {
@@ -102,11 +106,13 @@ h2.about {
   font-weight: 300;
   line-height: 80%;
 }
+
 .proj-description {
-  background:#1A2236;
+  background: #1a2236;
   color: #fff;
   padding-bottom: 25px;
 }
+
 ul.languages {
   display: flex;
   justify-content: flex-start;
@@ -118,8 +124,8 @@ li.lang-used {
   list-style: none;
   padding: 0 10px;
   font-size: 10.33px;
-  background-color:#98DEDE;
-  color: #1A2236;
+  background-color: #98dede;
+  color: #1a2236;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
 }
@@ -134,7 +140,7 @@ button.proj-link {
   font-size: 16px;
   height: 40px;
   margin-left: 20px;
-  padding: 10px; 
+  padding: 10px;
   background: #1a2236;
   color: #fff;
   border: 1px solid #fff;
@@ -149,8 +155,9 @@ button img {
   flex-direction: column;
   align-items: flex-start;
   color: rgb(26, 34, 54);
-  margin: 0 5% 0px;
+  margin: 0 5% 0;
 }
+
 .my-intro {
   font-family: Poppins, sans-serif;
   font-style: normal;
@@ -171,9 +178,9 @@ button.cv-btn {
   font-size: 16px;
   max-width: 500px;
   height: 50px;
-  margin: 32px 0px 40px;
+  margin: 32px 0 40px;
   width: 100%;
-  background: #1A2236;
+  background: #1a2236;
   color: #fff;
 }
 
@@ -184,37 +191,33 @@ button.cv-btn {
 }
 
 .language {
-  margin-left: 20%;
-  background-color: #1C528A;
+  background-color: #1c528a;
   background-image: url(./Images/ic_languages_mob.svg);
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: bottom;
   width: auto;
-  margin: 16px;
+  margin: 8px 16px 8px 16px;
   height: 290px;
-
 }
 
 .frameworks {
-  margin-left: 20%;
-  background-color: #E2505C;
+  background-color: #e2505c;
   background-image: url(./Images/ic_framework.svg);
   background-repeat: no-repeat;
   width: auto;
-  margin: 16px;
+  margin: 8px 16px 8px 16px;
   height: 290px;
   background-position-x: right;
   background-position-y: bottom;
 }
 
 .skills-tool {
-  margin-left: 20%;
-  background-color: #FEBF52;
+  background-color: #febf52;
   background-image: url(./Images/ic_skills.svg);
   background-repeat: no-repeat;
   width: auto;
-  margin: 16px;
+  margin: 8px 16px 16px 16px;
   height: 290px;
   background-position-x: right;
   background-position-y: bottom;
@@ -241,7 +244,6 @@ button.cv-btn {
 
 .skill-cat-list.li {
   font-size: 18px;
-  color: #1A2236;
   font-style: normal;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
