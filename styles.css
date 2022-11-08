@@ -117,14 +117,13 @@ h2.about {
 }
 
 ul.languages {
-  display: flex;
-  justify-content: flex-start;
   padding: 16px 0 20px 20px;
-  column-gap: 10px;
 }
 
 li.lang-used {
   list-style: none;
+  float: left;
+  margin-right: 10px;
   padding: 0 10px;
   font-size: 10.33px;
   background-color: #98dede;
