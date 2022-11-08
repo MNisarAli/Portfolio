@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -117,13 +118,13 @@ h2.about {
 }
 
 ul.languages {
+  display: flex;
+  column-gap: 10px;
   padding: 16px 0 20px 20px;
 }
 
 li.lang-used {
   list-style: none;
-  float: left;
-  margin-right: 10px;
   padding: 0 10px;
   font-size: 10.33px;
   background-color: #98dede;
@@ -203,39 +204,33 @@ button.cv-btn:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  padding: 0;
 }
 
 .language {
   background-color: #1c528a;
   background-image: url(./Images/ic_languages_mob.svg);
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: bottom;
-  width: auto;
-  margin: 8px 16px 8px -23px;
-  height: 290px;
 }
 
 .frameworks {
   background-color: #e2505c;
   background-image: url(./Images/ic_framework.svg);
-  background-repeat: no-repeat;
-  width: auto;
-  margin: 8px 16px 8px -23px;
-  height: 290px;
-  background-position-x: right;
-  background-position-y: bottom;
 }
 
 .skills-tool {
   background-color: #febf52;
   background-image: url(./Images/ic_skills.svg);
+}
+
+.language,
+.frameworks,
+.skills-tool {
   background-repeat: no-repeat;
-  width: auto;
-  margin: 8px 16px 16px -23px;
-  height: 290px;
   background-position-x: right;
   background-position-y: bottom;
+  width: auto;
+  margin: 8px 16px;
+  height: 290px;
 }
 
 .skill-cat {
