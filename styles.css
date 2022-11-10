@@ -6,6 +6,10 @@
   color: #1a2236;
 }
 
+.desk {
+  display: none;
+}
+
 body {
   background: #fff;
   background-image: url(./Images/image_geometry_1.svg);
@@ -362,4 +366,5 @@ footer {
 .social-handels {
   display: flex;
   justify-content: space-between;
+  padding: 0;
 }
