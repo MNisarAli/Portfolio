@@ -14,40 +14,45 @@
 <body>
   <header>
     <nav class="nav">
-      <a class="ic-menu" href="#">
+      <a class="ic-menu mob" href="#">
         <img src="./Images/ic_menu.svg" alt="Navigation menu">
       </a>
       <ul class="menu desk">
-        <li><a href="#">Hello</a></li>
-        <li><a href="#proj-section">Portfolio</a></li>
-        <li><a href="#about-section">About</a></li>
-        <li><a href="#contact-section">Contack</a></li>
+        <li><a href="#home">Hello</a></li>
+        <li><a href="#proj">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
-  <main>
-    <section class="headline">
-      <h1>Muhammad Nisar Ali</h1>
-      <div class="intro">
-        <p>
-          Hello! I am a software developer! I can help you build a product, feature
-          or website. Take a look of my works. If you like what you see and have a
-          project you need coded, don't hesitate and contact me.
-        </p>
-        <button type="button" class="button collab-button">Start collaboration</button>
-      </div>
-      <img class="main-dots desk" src="./Images/image_dots_dt.svg" alt="Dots image">
-    </section>
-    <div class="bottom-img">
-      <img class="bg-bottom" src="./Images/image_geometry_2.svg" alt="Background Image">
-      <img class="main-geometry desk" src="./Images/image_geometry_1_dt.svg" alt="Geometry image">
-    </div>
 
-    <section class="proj-section">
-      <h2 class="heading">Projects</h2>
+  <main>
+    <section id="home" class="home-section">
+      <article class="headline">
+
+        <div class="intro">
+          <h1>Muhammad Nisar Ali</h1>
+          <p>
+            Hello! I am a software developer! I can help you build a product, feature or website. Take a look of my works. <br> If you like what you see and have a project you need coded, don't hesitate and contact me.
+          </p>
+          <button type="button" class="button collab-button">Start collaboration</button>
+        </div>
+        <img class="main-dots desk" src="./Images/image_dots_dt.svg" alt="Dots image">
+      </article>
+
+      <article class="bottom-img">
+        <img class="bg-bottom mob" src="./Images/image_geometry_2.svg" alt="Background Image">
+        <img class="main-geometry desk" src="./Images/image_geometry_1_dt.svg" alt="Geometry image">
+      </article>
+    </section>
+
+    <section id="proj" class="proj-section">
+      <div class="animation">
+        <h2 class="heading">Projects</h2>
+      </div>
       <img class="proj-dots desk" src="./Images/image_dots_1_dt.svg" alt="Dosts image">
 
-      <article class="proj-container">
+      <article id="proj-1" class="proj-container">
         <img class="proj-img" src="./Images/Rectangle 21 (1).svg" alt="">
 
         <div class="proj-description">
@@ -65,10 +70,10 @@
         </div>
       </article>
 
-      <article class="proj-container">
+      <article id="proj-2" class="proj-container">
         <img class="proj-img" src="./Images/Rectangle 21.svg" alt="">
 
-        <div class="proj-description">
+        <div class="proj-description mob">
           <h3 class="proj-name">Project name goes here</h3>
 
           <ul class="languages">
@@ -81,13 +86,14 @@
             <img src="./Images/ic_arrow_right.svg" alt="Click and proced to check the project">
           </button>
         </div>
+
         <img class="geometry desk" src="./Images/image_geometry_2_dt.svg" alt="Geometry image with some shapes">
       </article>
 
-      <article class="proj-container">
+      <article id="proj-3" class="proj-container">
         <img class="proj-img" src="./Images/Rectangle 21 (2).svg" alt="">
 
-        <div class="proj-description">
+        <div class="proj-description mob">
           <h3 class="proj-name">Project name goes here</h3>
 
           <ul class="languages">
@@ -100,13 +106,14 @@
             <img src="./Images/ic_arrow_right.svg" alt="Click and proced to check the project">
           </button>
         </div>
+
         <img class="geometry desk" src="./Images/image_geometry_3_dt.svg" alt="Geometry image">
       </article>
 
-      <article class="proj-container">
+      <article id="proj-4" class="proj-container">
         <img class="proj-img" src="./Images/Rectangle 21 (3).svg" alt="">
 
-        <div class="proj-description">
+        <div class="proj-description mob">
           <h3 class="proj-name">Project name goes here</h3>
 
           <ul class="languages">
@@ -121,10 +128,10 @@
         </div>
       </article>
 
-      <article class="proj-container">
+      <article id="proj-5" class="proj-container">
         <img class="proj-img" src="./Images/Rectangle 21 (4).svg" alt="">
 
-        <div class="proj-description">
+        <div class="proj-description mob">
           <h3 class="proj-name">Project name goes here</h3>
 
           <ul class="languages">
@@ -137,23 +144,22 @@
             <img src="./Images/ic_arrow_right.svg" alt="Click and proced to check the project">
           </button>
         </div>
+
         <img class="geometry desk" src="./Images/Group_83_dt.svg" alt="Geometry image">
       </article>
 
-      <article class="proj-container last-container">
-        <div class="geometry desk">
-          <img src="./Images/image_geometry_5_dt.svg" alt="Geometry image">
-          <img src="./Images/image_geometry_4_dt.svg" alt="Geometry image">
-        </div>
+      <article id="proj-6" class="proj-container">
         <img class="proj-img" src="./Images/Rectangle 21 (5).svg" alt="">
 
         <div class="proj-description">
-          <h3 class="proj-name">Project name goes here</h3>
+          <h3 class="proj-name mob">Project name goes here</h3>
+          <h3 class="proj-name desk">Project name goes...</h3>
 
           <ul class="languages">
             <li class="lang-used">HTML/CSS</li>
             <li class="lang-used">Ruby on Rails</li>
-            <li class="lang-used">JavaScript</li>
+            <li class="lang-used mob">JavaScript</li>
+            <li class="lang-used desk">+1</li>
           </ul>
 
           <button class="proj-link" type="button"> See this project
@@ -161,16 +167,21 @@
           </button>
         </div>
       </article>
+
+      <article class="geometry-group desk">
+        <img class="geometry-5" src="./Images/image_geometry_5_dt.svg" alt="Geometry image">
+        <img class="geometry-4" src="./Images/image_geometry_4_dt.svg" alt="Geometry image">
+      </article>
     </section>
 
-    <section class="about-section">
+    <section id="about" class="about-section">
       <article class="introduction">
         <h2 class="about"> About </h2>
 
         <div class="my-intro">
-          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ea eiusmod </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ea eiusmod.
+          </p>
 
           <button class="cv-btn" type="button">Get my CV
             <img src="./Images/ic_download.svg" alt="downlod my CV">
@@ -218,34 +229,38 @@
     </section>
   </main>
   <footer>
-    <img class="geometry-top desk" src="./Images/image_geometry_6_dt.svg" alt="Geometry image">
-    <section class="contact-section">
-      <h2 class="get-started">Get started</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna.
-      </p>
+    <section class="bg-contact">
+      <article id="contact" class="contact-section">
+        <h2 class="get-started">Get started</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+        </p>
 
-      <form class="contact-form" action="https://formspree.io/f/mrgdrqjv" method="POST">
-        <ul>
-          <li class="user-input">
-            <label for="name">Your name</label>
-            <input type="text" name="user-name" id="name" placeholder="John Doe" maxlength="30" required>
-          </li>
-          <li class="user-input">
-            <label for="email">Your email</label>
-            <input type="email" name="user-email" id="email" placeholder="example@gmail.com" required>
-          </li>
-          <li class="user-input">
-            <textarea name="user-msg" id="textbox" cols="30" rows="10" placeholder="Enter your message here..." maxlength="500"
-              required></textarea>
-          </li>
-          <li class="user-input">
-            <button id="submit" type="submit">Start collaboration</button>
-          </li>
-        </ul>
-      </form>
+        <form class="contact-form" action="https://formspree.io/f/mrgdrqjv" method="POST">
+          <ul>
+            <li class="user-input">
+              <label for="name">Your name</label>
+              <input type="text" name="user-name" id="name" placeholder="John Doe" maxlength="30" required>
+            </li>
+
+            <li class="user-input">
+              <label for="email">Your email</label>
+              <input type="email" name="user-email" id="email" placeholder="example@gmail.com" required>
+            </li>
+
+           <li class="user-input text">
+              <label for="textbox">Message</label>
+              <textarea name="user-msg" id="textbox" cols="30" rows="10" maxlength="500" placeholder="Enter your message here..." required>
+             </textarea>
+           </li>
+
+           <li class="user-input btn">
+             <button id="submit" type="submit">Start collaboration</button>
+           </li>
+         </ul>
+       </form>
+     </article>
     </section>
-    <img class="geometry-bottom desk" src="./Images/image_geometry_7_dt.svg" alt="Geometry image">
 
     <section class="connect-section">
       <article class="get-resume">
@@ -255,16 +270,28 @@
       </article>
 
       <ul class="social-handels">
-        <li class="social-icon"><a href="#"><img src="./Images/ic_stackoverflow.svg"
-              alt="stackoverflow click to join"></a></li>
-        <li class="social-icon"><a href="#"><img src="./Images/ic_github.svg"
-              alt="github click to check profile"></a></li>
-        <li class="social-icon"><a href="#"><img src="./Images/ic_twitter.svg" alt="twiter click to connect"></a>
+        <li class="social-icon"><a href="#">
+          <img src="./Images/ic_stackoverflow.svg" alt="stackoverflow click to join"></a>
         </li>
-        <li class="social-icon"><a href="#"><img src="./Images/ic_linkedin.svg" alt="linkedin click to join"></a>
+
+        <li class="social-icon"><a href="#">
+          <img src="./Images/ic_github.svg" alt="github click to check profile"></a>
         </li>
-        <li class="social-icon"><a href="#"><img src="./Images/ic_medium.svg" alt="medium click to go"></a></li>
-        <li class="social-icon"><a href="#"><img src="./Images/ic_angellist.svg" alt="angellist click to go"></a>
+
+        <li class="social-icon"><a href="#">
+          <img src="./Images/ic_twitter.svg" alt="twiter click to connect"></a>
+        </li>
+
+        <li class="social-icon"><a href="#">
+          <img src="./Images/ic_linkedin.svg" alt="linkedin click to join"></a>
+        </li>
+
+        <li class="social-icon"><a href="#">
+          <img src="./Images/ic_medium.svg" alt="medium click to go"></a>
+        </li>
+
+        <li class="social-icon"><a href="#">
+          <img src="./Images/ic_angellist.svg" alt="angellist click to go"></a>
         </li>
       </ul>
     </section>
