@@ -453,4 +453,180 @@ footer {
     width: 100%;
     max-width: 100%;
   }
+
+  #proj {
+    grid-template-columns: 21.2% 11.15% 23.25% 12.2% 20% 12.2%;
+    margin-top: 12%;
+  }
+
+  .animation {
+    padding: 57% 0%;
+  }
+
+  .animation .heading {
+    margin: 0;
+    transform: rotate(270deg);
+  }
+
+  img.proj-dots {
+    max-width: 95%;
+  }
+
+  #proj-1 {
+    grid-column: 3 / 7;
+  }
+
+  #proj-1 .proj-description {
+    margin-top: -36%;
+    position: relative;
+    padding: 6% 6.2%;
+    background: rgba(26, 34, 54, 0.95);
+    backdrop-filter: blur(12px);
+  }
+
+  #proj-1 .proj-name {
+    font-size: 4.2vw;
+    font-weight: 700;
+    padding: 0;
+  }
+
+  #proj-1 .languages {
+    padding: 4% 0 6% 0;
+    width: 100%;
+  }
+
+  #proj-1 .lang-used {
+    font-size: 1.6vw;
+    padding: 1.6% 3%;
+  }
+
+  #proj-1 .proj-link {
+    margin: 0;
+    padding: 3.3%;
+    font-size: 18px;
+  }
+
+  #proj-1 button img {
+    margin-left: 20px;
+  }
+
+  #proj-2 {
+    grid-row: 2;
+    grid-column: 1/5;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  #proj-2 .proj-img {
+    max-width: 48%;
+  }
+
+  #proj-2 .geometry {
+    width: 100%;
+    max-width: 52%;
+    margin-bottom: -1px;
+  }
+
+  #proj-3 {
+    grid-row: 3;
+    grid-column: 1/5;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  #proj-3 .proj-img {
+    margin: -1px 0;
+    max-width: 82%;
+  }
+
+  #proj-3 .geometry {
+    max-width: 18%;
+  }
+
+  #proj-4 {
+    grid-row: 4;
+    grid-column: 4/6;
+  }
+
+  #proj-4 .proj-img {
+    margin: -1.5px 0;
+  }
+
+  #proj-5 {
+    grid-row: 3;
+    grid-column: 5/7;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: -18%;
+  }
+
+  #proj-5 .proj-img {
+    margin: -1px 0;
+  }
+
+  #proj-5 .geometry {
+    max-width: 75%;
+    margin: -1px 0;
+  }
+
+  #proj-6 {
+    grid-row: 2;
+    grid-column: 5/7;
+  }
+
+  #proj-6 .proj-img {
+    margin: 0;
+  }
+
+  #proj-6 .proj-description {
+    margin-top: -48%;
+    position: relative;
+    padding: 6% 6.2%;
+    background: rgba(26, 34, 54, 0.95);
+    backdrop-filter: blur(12px);
+  }
+
+  #proj-6 .proj-name {
+    font-weight: 700;
+    font-size: 2.7vw;
+    padding: 0;
+  }
+
+  #proj-6 .languages {
+    padding: 4% 0;
+    width: 100%;
+  }
+
+  #proj-6 .lang-used {
+    font-size: 1.5vw;
+    padding: 2.5% 4%;
+  }
+
+  #proj-6 .proj-link {
+    margin: 0;
+    padding: 6.3%;
+    font-size: 18px;
+  }
+
+  #proj-6 button img {
+    margin-left: 20px;
+  }
+
+  .geometry-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    grid-row: 4;
+    grid-column: 1/4;
+    margin: -1px 0;
+  }
+
+  .geometry-group .geometry-5 {
+    max-width: 28%;
+  }
+
+  .geometry-group .geometry-4 {
+    max-width: 12%;
+  }
 }
