@@ -695,4 +695,69 @@ footer {
     max-width: 74%;
   }
 
+  .bg-contact {
+    display: flex;
+    justify-content: center;
+    background: url(./Images/image_geometry_6_dt.svg) left top no-repeat, url(./Images/image_geometry_7_dt.svg) right bottom no-repeat;
+    background-size: auto;
+    margin: 0;
+  }
+
+  .contact-section {
+    margin: 11.5% 0 10% 0;
+    padding: 0;
+    max-width: 38%;
+  }
+
+  .contact-form {
+    max-width: 100%;
+  }
+
+  .contact-form ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .user-input {
+    width: 47%;
+  }
+
+  .user-input label {
+    position: static;
+    padding: 4px 0;
+    font-size: 12px;
+  }
+
+  .user-input input {
+    padding: 0 16px;
+  }
+
+  .user-input.text,
+  .user-input.btn {
+    width: 100%;
+  }
+
+  .user-input textarea {
+    height: 140px;
+  }
+
+  .user-input button {
+    margin: 30px 0 0 0;
+    align-self: center;
+    max-width: 58%;
+    height: 70px;
+    max-height: 70%;
+    font-size: 18px;
+  }
+
+  .connect-section {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3.5% 11%;
+  }
+
+  .social-handels {
+    column-gap: 32px;
+  }
 }
