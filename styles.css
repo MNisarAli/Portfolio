@@ -6,6 +6,10 @@
   color: #1a2236;
 }
 
+.desk {
+  display: none;
+}
+
 body {
   background: #fff;
   background-image: url(./Images/image_geometry_1.svg);
@@ -23,7 +27,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 21% 5% 0 5%;
+  margin: 15% 5% 0 5%;
 }
 
 h1,
@@ -32,6 +36,10 @@ h2 {
   font-size: 50px;
   font-weight: 400;
   line-height: 100%;
+}
+
+h1 {
+  margin-bottom: 20px;
 }
 
 .intro {
@@ -98,6 +106,7 @@ h2.about {
   font-size: 20px;
   font-weight: 300;
   line-height: 80%;
+  color: #fff;
   padding: 30px 0 0 20px;
 }
 
@@ -105,7 +114,6 @@ h2.about {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  color: #fff;
   background: #1a2236;
   padding-bottom: 25px;
 }
@@ -336,4 +344,417 @@ footer {
 .user-input button:hover {
   color: #1a2236;
   background: #fff;
+}
+
+.connect-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #1a2236;
+  row-gap: 30px;
+  padding: 30px 5% 40px 5%;
+}
+
+.resume-link img {
+  margin-left: 16px;
+}
+
+.resume-link {
+  display: flex;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #92dcdc;
+}
+
+.social-handels {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: none;
+  }
+
+  .mob {
+    display: none;
+  }
+
+  .desk {
+    display: block;
+  }
+
+  header {
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 1px solid #e5e5e5;
+    margin: 0;
+  }
+
+  .menu {
+    display: flex;
+    padding: 0;
+    list-style: none;
+  }
+
+  .menu li {
+    padding: 10px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 20px 15px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .menu a:hover {
+    text-decoration: underline;
+  }
+
+  #home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .headline {
+    margin: 27% 0 0 15%;
+    justify-content: space-between;
+  }
+
+  h1,
+  h2 {
+    font-size: 7.2vw;
+  }
+
+  .intro {
+    margin: 0 4% 0 0;
+  }
+
+  .intro p {
+    margin: 12% 0;
+  }
+
+  .button {
+    margin: 0;
+    width: 53%;
+    height: 17%;
+    font-size: 18px;
+  }
+
+  img.main-dots {
+    align-self: flex-end;
+    width: 29%;
+  }
+
+  img.main-geometry {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #proj {
+    grid-template-columns: 21.2% 11.15% 23.25% 12.2% 20% 12.2%;
+    margin-top: 12%;
+  }
+
+  .animation {
+    padding: 57% 0%;
+  }
+
+  .animation .heading {
+    margin: 0;
+    transform: rotate(270deg);
+  }
+
+  img.proj-dots {
+    max-width: 95%;
+  }
+
+  #proj-1 {
+    grid-column: 3 / 7;
+  }
+
+  #proj-1 .proj-description {
+    margin-top: -36%;
+    position: relative;
+    padding: 6% 6.2%;
+    background: rgba(26, 34, 54, 0.95);
+    backdrop-filter: blur(12px);
+  }
+
+  #proj-1 .proj-name {
+    font-size: 4.2vw;
+    font-weight: 700;
+    padding: 0;
+  }
+
+  #proj-1 .languages {
+    padding: 4% 0 6% 0;
+    width: 100%;
+  }
+
+  #proj-1 .lang-used {
+    font-size: 1.6vw;
+    padding: 1.6% 3%;
+  }
+
+  #proj-1 .proj-link {
+    margin: 0;
+    padding: 3.3%;
+    font-size: 18px;
+  }
+
+  #proj-2 {
+    grid-row: 2;
+    grid-column: 1/5;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  #proj-2 .proj-img {
+    max-width: 48%;
+  }
+
+  #proj-2 .geometry {
+    width: 100%;
+    max-width: 52%;
+    margin-bottom: -1px;
+  }
+
+  #proj-3 {
+    grid-row: 3;
+    grid-column: 1/5;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  #proj-3 .proj-img {
+    margin: -1px 0;
+    max-width: 82%;
+  }
+
+  #proj-3 .geometry {
+    max-width: 18%;
+  }
+
+  #proj-4 {
+    grid-row: 4;
+    grid-column: 4/6;
+  }
+
+  #proj-4 .proj-img {
+    margin: -1.5px 0;
+  }
+
+  #proj-5 {
+    grid-row: 3;
+    grid-column: 5/7;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: -18%;
+  }
+
+  #proj-5 .proj-img {
+    margin: -1px 0;
+  }
+
+  #proj-5 .geometry {
+    max-width: 75%;
+    margin: -1px 0;
+  }
+
+  #proj-6 {
+    grid-row: 2;
+    grid-column: 5/7;
+  }
+
+  #proj-6 .proj-img {
+    margin: 0;
+  }
+
+  #proj-6 .proj-description {
+    margin-top: -48%;
+    position: relative;
+    padding: 6% 6.2%;
+    background: rgba(26, 34, 54, 0.95);
+    backdrop-filter: blur(12px);
+  }
+
+  #proj-6 .proj-name {
+    font-weight: 700;
+    font-size: 2.7vw;
+    padding: 0;
+  }
+
+  #proj-6 .languages {
+    padding: 4% 0;
+    width: 100%;
+  }
+
+  #proj-6 .lang-used {
+    font-size: 1.5vw;
+    padding: 2.5% 4%;
+  }
+
+  #proj-6 .proj-link {
+    margin: 0;
+    padding: 6.3%;
+    font-size: 18px;
+  }
+
+  .geometry-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    grid-row: 4;
+    grid-column: 1/4;
+    margin: -1px 0;
+  }
+
+  .geometry-group .geometry-5 {
+    max-width: 28%;
+  }
+
+  .geometry-group .geometry-4 {
+    max-width: 12%;
+  }
+
+  #about {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin: 14.5% 0 10.5% 0;
+  }
+
+  h2.about {
+    margin: 6% 0 5% 0;
+  }
+
+  .introduction {
+    margin: 0 0 0 7%;
+    width: 40%;
+  }
+
+  button.cv-btn {
+    font-size: 18px;
+    margin: 8% 0;
+    max-width: 48%;
+    height: 38%;
+  }
+
+  ul.knowledge {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 40%;
+  }
+
+  .language,
+  .frameworks,
+  .skills-tool {
+    margin: 0;
+    padding: 16%;
+    width: 100%;
+    max-height: 100%;
+    height: auto;
+  }
+
+  .skill-cat {
+    font-size: 1.5vw;
+    margin: 0 0 9% 0;
+  }
+
+  .skill-cat-list {
+    margin: 0;
+    padding-left: 20px;
+    list-style: disc;
+  }
+
+  .skill-cat-list .li {
+    font-size: 1.3vw;
+    letter-spacing: -0.0525em;
+  }
+
+  .knowledge .desk {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  .knowledge .desk img {
+    max-width: 74%;
+  }
+
+  #proj-1 button img,
+  #proj-6 button img {
+    margin-left: 20px;
+  }
+
+  .bg-contact {
+    display: flex;
+    justify-content: center;
+    background: url(./Images/image_geometry_6_dt.svg) left top no-repeat, url(./Images/image_geometry_7_dt.svg) right bottom no-repeat;
+    background-size: auto;
+    margin: 0;
+  }
+
+  .contact-section {
+    margin: 11.5% 0 10% 0;
+    padding: 0;
+    max-width: 38%;
+  }
+
+  .contact-form {
+    max-width: 100%;
+  }
+
+  .contact-form ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .user-input {
+    width: 47%;
+  }
+
+  .user-input label {
+    position: static;
+    padding: 4px 0;
+    font-size: 12px;
+  }
+
+  .user-input input {
+    padding: 0 16px;
+  }
+
+  .user-input.text,
+  .user-input.btn {
+    width: 100%;
+  }
+
+  .user-input textarea {
+    height: 140px;
+  }
+
+  .user-input button {
+    margin: 30px 0 0 0;
+    align-self: center;
+    max-width: 58%;
+    height: 70px;
+    max-height: 70%;
+    font-size: 18px;
+  }
+
+  .connect-section {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3.5% 11%;
+  }
+
+  .social-handels {
+    column-gap: 32px;
+  }
 }
