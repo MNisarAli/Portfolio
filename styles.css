@@ -65,8 +65,8 @@ h1 {
   width: 100%;
   max-width: 500px;
   height: 50px;
-  animation-duration: 2s;
-  transition: backround 2s ease-in-out, color 2s ease-in-out;
+  animation-duration: 0.5s;
+  transition: backround 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
 .button:hover {
@@ -147,8 +147,8 @@ button.proj-link {
   padding: 10px;
   height: 40px;
   border: 1px solid #fff;
-  animation-duration: 2s;
-  transition: backround 2s ease-in-out, color 2s ease-in-out;
+  animation-duration: 0.5s;
+  transition: backround 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
 button:hover {
@@ -190,8 +190,8 @@ button.cv-btn {
   max-width: 500px;
   margin: 32px 0 40px;
   height: 50px;
-  animation-duration: 2s;
-  transition: backround 2s ease-in-out, color 2s ease-in-out;
+  animation-duration: 0.5s;
+  transition: backround 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
 button.cv-btn:hover {
@@ -345,8 +345,8 @@ footer {
   width: 100%;
   max-width: 500px;
   height: 50px;
-  animation-duration: 2s;
-  transition: backround 2s ease-in-out, color 2s ease-in-out;
+  animation-duration: 0.5s;
+  transition: backround 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
 .user-input button:hover {
