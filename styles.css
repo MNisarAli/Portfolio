@@ -769,6 +769,8 @@ footer {
   }
 }
 
+/* Toogle Menu */
+
 @media screen and (max-width: 768px) {
   .hamburger {
     z-index: 1;
@@ -822,5 +824,143 @@ footer {
 
   .menu.active {
     left: 0;
+    list-style: none;
   }
+}
+
+/* Popup Window */
+
+.hidden {
+  display: none !important;
+}
+
+.card {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  z-index: 5;
+  overflow-y: scroll;
+  height: 100vh;
+  padding: 5%;
+}
+
+.card-cross {
+  align-self: flex-end;
+  font-size: 20px;
+  color: #1a2236;
+  transition: 0.3s;
+}
+
+.card-cross:hover {
+  font-size: 22px;
+}
+
+.card h3 {
+  align-self: flex-start;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 80%;
+  margin: 15px 0;
+}
+
+.card ul {
+  display: flex;
+  align-self: flex-start;
+  list-style-type: none;
+  padding: 0;
+  margin: 8px 0 0 0;
+}
+
+#tech-used li {
+  border: 0.5px solid #1a2236;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 80%;
+  padding: 6px 10px;
+  margin-right: 10px;
+}
+
+.card img {
+  width: 100%;
+  margin: 20px;
+}
+
+#project-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  max-width: 600px;
+}
+
+#link-buttons {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  max-width: 500px;
+  margin: 25px;
+}
+
+.card-btn {
+  background: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  border: 1px solid #1a2236;
+  height: 51px;
+  margin-bottom: 30px;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20%;
+}
+
+.card-btn:hover {
+  background-color: #1a2236;
+  color: #fff;
+}
+
+@media screen and (min-width: 980px) {
+
+  .card {
+    border: 3.5rem solid;
+    padding: 3.5rem;
+    overflow-y: scroll;
+  }
+
+  .card-cross {
+    font-size: 40px;
+  }
+
+  .card h3 {
+    font-size: 60px;
+    margin: -50px 0px 25px 0;
+  }
+
+  #tech-used li {
+    font-size: 20px;
+    padding: 12px 18px;
+  }
+
+  #project-description {
+    max-width: 700px;
+    margin: 25px 0 5px 0;
+  }
+
+  #link-buttons {
+    max-width: 700px;
+    flex-direction: row;
+    column-gap: 30px;
+  }
+
+  .card-btn {
+    width: 250px;
+    padding: 12px 20px;
+  }
+
 }
