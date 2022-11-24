@@ -261,10 +261,10 @@ function popup(num) {
   const srcBtn = document.querySelector('#proj-source');
   srcBtn.setAttribute('onclick', `window.open("${projects[num].link[1]}", "_blank");`);
 }
-popup();
 
 function toggle() {
   const projCard = document.querySelector('#proj-card');
   projCard.classList.toggle('hidden');
 }
 toggle();
+popup();
