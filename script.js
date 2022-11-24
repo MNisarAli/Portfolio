@@ -13,8 +13,7 @@ links.forEach((link) => link.addEventListener('click', () => {
 }));
 
 const projectSection = document.querySelector('#proj');
-projectSection.innerHTML =
-  `
+projectSection.innerHTML = `
   <div class="animation">
     <h2 class="heading">Projects</h2>
   </div>
@@ -148,7 +147,7 @@ const project1 = {
   technologies: [
     'HTML/CSS',
     'Ruby on Rails',
-    'JavaScript'
+    'JavaScript',
   ],
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br><br> Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
   link: [
@@ -163,7 +162,7 @@ const project2 = {
   technologies: [
     'HTML/CSS',
     'Ruby on Rails',
-    'JavaScript'
+    'JavaScript',
   ],
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br><br> Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
   link: [
@@ -178,7 +177,7 @@ const project3 = {
   technologies: [
     'HTML/CSS',
     'Ruby on Rails',
-    'JavaScript'
+    'JavaScript',
   ],
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br><br> Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
   link: [
@@ -193,7 +192,7 @@ const project4 = {
   technologies: [
     'HTML/CSS',
     'Ruby on Rails',
-    'JavaScript'
+    'JavaScript',
   ],
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br><br> Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
   link: [
@@ -208,7 +207,7 @@ const project5 = {
   technologies: [
     'HTML/CSS',
     'Ruby on Rails',
-    'JavaScript'
+    'JavaScript',
   ],
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br><br> Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
   link: [
@@ -223,7 +222,7 @@ const project6 = {
   technologies: [
     'HTML/CSS',
     'Ruby on Rails',
-    'JavaScript'
+    'JavaScript',
   ],
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br><br> Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
   link: [
@@ -244,7 +243,7 @@ function popup(num) {
 
   const list = document.querySelector('#tech-used');
   list.innerHTML = '';
-  for (let i = 0; i < projects[num].technologies.length; i ++) {
+  for (let i = 0; i < projects[num].technologies.length; i += 1) {
     const li = document.createElement('li');
     li.textContent = projects[num].technologies[i];
     list.appendChild(li);
@@ -262,8 +261,10 @@ function popup(num) {
   const srcBtn = document.querySelector('#proj-source');
   srcBtn.setAttribute('onclick', `window.open("${projects[num].link[1]}", "_blank");`);
 }
+popup();
 
 function toggle() {
   const projCard = document.querySelector('#proj-card');
   projCard.classList.toggle('hidden');
 }
+toggle();

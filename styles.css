@@ -926,7 +926,6 @@ footer {
 }
 
 @media screen and (min-width: 980px) {
-
   .card {
     border: 3.5rem solid;
     padding: 3.5rem;
@@ -939,7 +938,7 @@ footer {
 
   .card h3 {
     font-size: 60px;
-    margin: -50px 0px 25px 0;
+    margin: -50px 0 25px 0;
   }
 
   #tech-used li {
@@ -962,5 +961,4 @@ footer {
     width: 250px;
     padding: 12px 20px;
   }
-
 }
