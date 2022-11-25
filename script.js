@@ -279,8 +279,7 @@ function validation() {
   form.addEventListener('submit', (event) => {
     if (email === email.toLowerCase()) {
       form.submit();
-    }
-    else {
+    } else {
       event.preventDefault();
       errorMsg.innerHTML = '* Make sure your email id is in lower case.';
     }
