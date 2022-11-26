@@ -962,3 +962,7 @@ footer {
     padding: 12px 20px;
   }
 }
+
+#error {
+  color: #f00;
+}
