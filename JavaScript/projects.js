@@ -1,18 +1,5 @@
-const hamburger = document.querySelector('.hamburger');
-const menu = document.querySelector('.menu');
-const links = document.querySelectorAll('.menu-link');
-
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  menu.classList.toggle('active');
-});
-
-links.forEach((link) => link.addEventListener('click', () => {
-  hamburger.classList.remove('active');
-  menu.classList.remove('active');
-}));
-
 const projectSection = document.querySelector('#proj');
+
 projectSection.innerHTML = `
   <div class="animation">
     <h2 class="heading">Projects</h2>
@@ -28,7 +15,7 @@ projectSection.innerHTML = `
         <li class="lang-used">Ruby on Rails</li>
         <li class="lang-used">JavaScript</li>
       </ul>
-      <button class="proj-link" type="button" onclick="popup(1)"> See this project
+      <button class="proj-link" type="button" onclick="popup(0)"> See this project
         <img src="./Images/ic_arrow_right.svg" alt="Click and proced to check the project">
       </button>
     </div>
@@ -43,7 +30,7 @@ projectSection.innerHTML = `
         <li class="lang-used">Ruby on Rails</li>
         <li class="lang-used">JavaScript</li>
       </ul>
-      <button class="proj-link" type="button" onclick="popup(2)"> See this project
+      <button class="proj-link" type="button" onclick="popup(1)"> See this project
         <img src="./Images/ic_arrow_right.svg" alt="Click and proced to check the project">
       </button>
     </div>
@@ -59,7 +46,7 @@ projectSection.innerHTML = `
         <li class="lang-used">Ruby on Rails</li>
         <li class="lang-used">JavaScript</li>
       </ul>
-      <button class="proj-link" type="button" onclick="popup(3)"> See this project
+      <button class="proj-link" type="button" onclick="popup(2)"> See this project
         <img src="./Images/ic_arrow_right.svg" alt="Click and proced to check the project">
       </button>
     </div>
@@ -75,7 +62,7 @@ projectSection.innerHTML = `
         <li class="lang-used">Ruby on Rails</li>
         <li class="lang-used">JavaScript</li>
       </ul>
-      <button class="proj-link" type="button" onclick="popup(4)"> See this project
+      <button class="proj-link" type="button" onclick="popup(3)"> See this project
         <img src="./Images/ic_arrow_right.svg" alt="Click and proced to check the project">
       </button>
     </div>
@@ -90,7 +77,7 @@ projectSection.innerHTML = `
         <li class="lang-used">Ruby on Rails</li>
         <li class="lang-used">JavaScript</li>
       </ul>
-      <button class="proj-link" type="button" onclick="popup(5)"> See this project
+      <button class="proj-link" type="button" onclick="popup(4)"> See this project
         <img src="./Images/ic_arrow_right.svg" alt="Click and proced to check the project">
       </button>
     </div>
@@ -108,7 +95,7 @@ projectSection.innerHTML = `
         <li class="lang-used mob">JavaScript</li>
         <li class="lang-used desk">+1</li>
       </ul>
-      <button class="proj-link" type="button" onclick="popup(6)"> See this project
+      <button class="proj-link" type="button" onclick="popup(5)"> See this project
         <img src="./Images/ic_arrow_right.svg" alt="Click and proced to check the project">
       </button>
     </div>
@@ -268,21 +255,3 @@ function toggle() {
 }
 toggle();
 popup();
-
-// Form Validation
-
-function validation() {
-  const form = document.querySelector('form');
-  const email = form.elements.email.value;
-  const errorMsg = document.querySelector('#error');
-
-  form.addEventListener('submit', (event) => {
-    if (email === email.toLowerCase()) {
-      form.submit();
-    } else {
-      event.preventDefault();
-      errorMsg.innerHTML = '* Make sure your email id is in lower case.';
-    }
-  });
-}
-validation();
