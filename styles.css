@@ -71,6 +71,7 @@ h1 {
 
 .button:hover {
   background: #fff;
+  cursor: pointer;
 }
 
 .bottom-img {
@@ -155,6 +156,7 @@ button:hover {
   color: #1a2236;
   background: #fff;
   backdrop-filter: blur(0.5px);
+  cursor: pointer;
 }
 
 button img {
@@ -198,6 +200,7 @@ button.cv-btn:hover {
   color: #1a2236;
   background: #fff;
   backdrop-filter: blur(0.5px);
+  cursor: pointer;
 }
 
 .knowledge {
@@ -352,6 +355,7 @@ footer {
 .user-input button:hover {
   color: #1a2236;
   background: #fff;
+  cursor: pointer;
 }
 
 .connect-section {
@@ -773,7 +777,7 @@ footer {
 
 @media screen and (max-width: 768px) {
   .hamburger {
-    z-index: 1;
+    z-index: 09;
     position: relative;
   }
 
@@ -784,6 +788,11 @@ footer {
     margin: 5px auto;
     transition: all 0.3s ease-in-out;
     background-color: #1a2236;
+  }
+
+  .hamburger.active {
+    position: fixed;
+    right: 20px;
   }
 
   .hamburger.active .bar:nth-child(1) {
@@ -825,10 +834,11 @@ footer {
   .menu.active {
     left: 0;
     list-style: none;
+    z-index: 08;
   }
 }
 
-/* Popup Window */
+/* Popup Window Modal */
 
 .hidden {
   display: none !important;
@@ -842,7 +852,7 @@ footer {
   flex-direction: column;
   align-items: center;
   background-color: #fff;
-  z-index: 5;
+  z-index: 10;
   overflow-y: scroll;
   height: 100vh;
   padding: 5%;
@@ -936,6 +946,12 @@ footer {
     font-size: 40px;
   }
 
+  .card-cross:hover {
+    font-size: 40px;
+    cursor: pointer;
+    color: #8b0000;
+  }
+
   .card h3 {
     font-size: 60px;
     margin: -50px 0 25px 0;
@@ -960,6 +976,10 @@ footer {
   .card-btn {
     width: 250px;
     padding: 12px 20px;
+  }
+
+  .card-btn:hover {
+    cursor: pointer;
   }
 }
 
