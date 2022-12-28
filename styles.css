@@ -452,8 +452,9 @@ footer {
   .button {
     margin: 0;
     width: 53%;
-    height: 17%;
+    min-width: 200px;
     font-size: 18px;
+    padding: 5.5% 0;
   }
 
   img.main-dots {
@@ -654,7 +655,7 @@ footer {
     font-size: 18px;
     margin: 8% 0;
     max-width: 48%;
-    height: 38%;
+    padding: 6.5% 0;
   }
 
   ul.knowledge {
@@ -757,9 +758,9 @@ footer {
     margin: 30px 0 0 0;
     align-self: center;
     max-width: 58%;
-    height: 70px;
-    max-height: 70%;
+    min-width: 200px;
     font-size: 18px;
+    padding: 5.5% 0;
   }
 
   .connect-section {
